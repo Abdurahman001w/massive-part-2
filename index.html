@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [10, 2762, 0.42, 192, 3, 28, 1125, 2018, 34, 66, 100];
+      arr.forEach(function (arr) {
+        if (arr % 2 !== 0) {
+          console.log(arr);
+        }
+      });
+
+      const arr2 = [
+        "lorem",
+        "ipsum",
+        "javascript",
+        "php",
+        "css",
+        "react",
+        "git",
+        "html",
+        "mysql",
+      ];
+      let arr5 = [10, 2762, 0.42, 192, 3, 28, 1125, 2018, 34, 66, 100];
+      let newArray = [];
+
+      for (let i = 0; i < arr5.length; i++) {
+        if (arr5[i] % 2 === 0) {
+          newArray.push(arr5[i]);
+        }
+      }
+
+      console.log(newArray);
+      const arr7 = [
+        "lorem ipsum",
+        "javascript",
+        "php",
+        "css",
+        "react",
+        "git",
+        "html",
+        "mysql",
+      ];
+      const newarrray = arr7.filter((item) => item.length !== 3);
+      console.log(newarrray);
+      let numbers = [5, 6, 7, 8, 9];
+      let part = numbers.map((number) => number * number);
+      console.log(part);
+
+      let arr11 = [
+        { a: 10, b: 5 },
+        { a: 20, b: 22 },
+        { a: 131, b: 55 },
+      ];
+      let arr10 = arr11.map((object) =>
+        Object.values(object).reduce((sum, value) => sum + value)
+      );
+      console.log(arr10);
+
+      let numbers2 = [-13, 0, 12, 1662, -0.32, -102, -2];
+      let negatives = numbers2.filter((number) => number < 0);
+      let sum = negatives.reduce((sum, number) => sum + number, 0);
+      console.log(sum);
+
+      let objects = [
+        { x: 10, y: "lorem" },
+        { x: 21, y: "lorem" },
+        { x: -17, y: "lorem" },
+        { x: 156, y: "lorem" },
+      ];
+      let sum2 = objects.reduce((sum2, object) => sum2 + object.x, 0);
+      console.log(sum2);
+
+      // let arr = ["lorem", 22, true, "update"];
+      //  console.log(arr);
+      //arr.pop()
+      //arr.shift()
+      //arr.unshift()
+      //arr.push()
+      //  let arr = [1, 2, 3, 4, 5, 6, 7];
+      // let arr2 = arr.map(function (item, index) {
+      //   return item + 1;
+      // });
+      //  let arr2 = arr.reduce(function (sum, item, index, arr) {
+      //   return sum + item;
+      //   }, 10);
+
+      //console.log(arr2);
+      //  let arr2 = arr.filter(function (item, index) {
+      //  if (item.length >= 3) {
+      //   return item;
+      // } else {
+      //  return 0;
+      //}
+      // });
+
+      // let arr2 = arr.filter((item) => item.length > 3);
+
+      // console.log(arr2);
+
+      //console.log(arr2);
+      //  console.log(arr);
+
+      //  arr.forEach(function (item, index, arr) {
+      // console.log(`элементы:${item},индекс ${index},массив:${arr}`);
+      // });
+      //console.log(arr.includes("text"));
+
+      // let arr2 = arr.splice(2);
+      //  let arrr = [3, 5, 7, 333];
+      //  let arr2 = arr.concat(arrr, [653]);
+      //  let arr2 = arr.concat([3, 5, 7, 333]);
+      //console.log(arr.indexOf(5));
+    </script>
+  </body>
+</html>
